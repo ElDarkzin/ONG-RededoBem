@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/engajamento_de_voluntario.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="assets/js/engajamento_de_voluntario.js"></script>
+  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+  <title>Rede do Bem — Engajamento de Voluntários</title>
+  <meta name="description" content="Portal de voluntariado da Rede do Bem — oportunidades, inscrições e certificados digitais." />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="navbar">
+            <a class="brand" href="#" aria-label="Rede do Bem - Home">
+            <div class="logo" aria-hidden="true">RdB</div>
+            <div>
+            <div style="font-weight:800">Rede do Bem</div>
+         <div style="font-size:12px;color:var(--muted)">Conectando corações e ações</div>
+        </div>
+      </a>
+
+      <ul class="links">
+        <li><a href="index.html">Sobre</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a class="btn" href="index.html">Doar</a></li>
+        <li><a href="engajamento_de_voluntario.html">Voluntaria-se</a></li>
+      </ul>
+      <div class="profile-icon" onclick="location.href='perfil.html'" id="profileIcon">RdB</div>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <div class="dropdown_menu ">
+        <li><a href="index.html">Sobre</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="index.html">Doar</a></li>
+        <li><a href="engajamento_de_voluntario.html">Voluntaria-se</a></li>
+        <li><a href="perfil.html">Meu perifl</a></li>
+      </div>
+        </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-card fade-up">
+          <h1>Engajamento de Voluntários</h1>
+          <p class="lead">Participe das oportunidades de voluntariado, acompanhe seu histórico de ações e conquiste certificados digitais por sua dedicação.</p>
+        </div>
+      </section>
+
+      <!-- PORTAL DE OPORTUNIDADES -->
+      <section id="oportunidades" style="margin-top:20px">
+        <h2>Portal de Oportunidades</h2>
+        <p class="muted">Encontre atividades de voluntariado alinhadas ao seu perfil e disponibilidade.</p>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Distribuição de Alimentos</h3>
+            <p class="small">Ajude na entrega de cestas básicas em comunidades carentes.</p>
+            <p><b>Dias:</b> Sábados e domingos</p>
+            <button class="btn">Inscrever-se</button>
+          </article>
+
+          <article class="card">
+            <h3>Oficinas Educacionais</h3>
+            <p class="small">Compartilhe conhecimento em aulas de reforço escolar e oficinas.</p>
+            <p><b>Dias:</b> Segundas e quartas</p>
+            <button class="btn">Inscrever-se</button>
+          </article>
+
+          <article class="card">
+            <h3>Campanhas de Saúde</h3>
+            <p class="small">Apoie campanhas de prevenção e orientação em postos de saúde.</p>
+            <p><b>Dias:</b> Variáveis</p>
+            <button class="btn">Inscrever-se</button>
+          </article>
+        </div>
+      </section>
+
+      <!-- SISTEMA DE INSCRIÇÃO -->
+      <section id="inscricao" style="margin-top:30px">
+        <h2>Inscrição e Seleção</h2>
+        <p class="muted">Preencha o formulário abaixo para participar do processo seletivo de voluntários da Rede do Bem.</p>
+
+        <form id="volunteerForm" class="card" onsubmit="return handleVolunteer(event)" novalidate>
+          <label>Nome completo</label>
+          <input type="text" id="volName" placeholder="Seu nome" required>
+
+          <label>CPF</label>
+          <input type="text" id="volCPF" placeholder="000.000.000-00" required>
+
+          <label>Email</label>
+          <input type="email" id="volEmail" placeholder="seuemail@exemplo.com" required>
+
+          <label>Área de interesse</label>
+          <select id="volArea" required>
+            <option value="">Selecione...</option>
+            <option value="alimentacao">Distribuição de Alimentos</option>
+            <option value="educacao">Educação</option>
+            <option value="saude">Saúde</option>
+            <option value="administrativo">Apoio Administrativo</option>
+          </select>
+
+          <label>Disponibilidade (dias/horários)</label>
+          <input type="text" id="volDisponibilidade" placeholder="Ex: finais de semana, manhãs, tardes...">
+
+          <button type="submit" class="btn">Enviar inscrição</button>
+          <div id="volunteerResult" class="small" role="status" aria-live="polite"></div>
+        </form>
+      </section>
+
+      <!-- HISTÓRICO DO VOLUNTÁRIO -->
+      <section id="historico" style="margin-top:30px">
+        <h2>Histórico de Participações</h2>
+        <p class="muted">Acompanhe suas atividades concluídas e o impacto gerado.</p>
+
+        <div class="card">
+          <table style="width:100%; border-collapse:collapse;">
+            <thead>
+              <tr style="text-align:left;">
+                <th>Projeto</th>
+                <th>Data</th>
+                <th>Horas</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Distribuição de Alimentos</td>
+                <td>10/09/2025</td>
+                <td>6h</td>
+                <td>Concluído</td>
+              </tr>
+              <tr>
+                <td>Oficina de Reforço Escolar</td>
+                <td>05/10/2025</td>
+                <td>4h</td>
+                <td>Concluído</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- CERTIFICADOS DIGITAIS -->
+      <section id="certificados" style="margin-top:30px; margin-bottom:40px;">
+        <h2>Certificados Digitais</h2>
+        <p class="muted">Baixe seus certificados de participação nos projetos da Rede do Bem.</p>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Certificado — Distribuição de Alimentos</h3>
+            <p class="small">Emitido em 11/09/2025</p>
+            <button class="btn">Baixar PDF</button>
+          </article>
+
+          <article class="card">
+            <h3>Certificado — Oficina de Reforço Escolar</h3>
+            <p class="small">Emitido em 06/10/2025</p>
+            <button class="btn">Baixar PDF</button>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>© <span id="year"></span> Rede do Bem — Todos os direitos reservados</div>
+    </footer>
+  </div>
+</body>
+</html>

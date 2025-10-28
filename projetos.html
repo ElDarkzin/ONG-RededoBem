@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/projetos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="assets/js/projetos.js" defer></script>
+  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+  <title>Projetos Sociais — Rede do Bem</title>
+  <meta name="description" content="Projetos sociais da Rede do Bem — saiba como participar como voluntário ou fazer sua doação." />
+</head>
+
+<body>
+  <div class="container">
+    <!-- Cabeçalho -->
+    <header>
+      <div class="navbar">
+            <a class="brand" href="#" aria-label="Rede do Bem - Home">
+            <div class="logo" aria-hidden="true">RdB</div>
+            <div>
+            <div style="font-weight:800">Rede do Bem</div>
+         <div style="font-size:12px;color:var(--muted)">Conectando corações e ações</div>
+        </div>
+      </a>
+
+      <ul class="links">
+        <li><a href="index.html">Sobre</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a class="btn" href="#doar">Doar</a></li>
+        <li><a href="engajamento_de_voluntario.html">Voluntaria-se</a></li>
+      </ul>
+      <div class="profile-icon" onclick="location.href='perfil.html'" id="profileIcon">RdB</div>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <div class="dropdown_menu ">
+        <li><a href="index.html">Sobre</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="#doar">Doar</a></li>
+        <li><a href="engajamento_de_voluntario.html">Voluntaria-se</a></li>
+        <li><a href="perfil.html">Meu perifl</a></li>
+      </div>
+        </div>
+    </header>
+
+    <main>
+      <!-- Introdução -->
+      <section class="hero">
+        <div class="hero-card fade-up">
+          <h1>Projetos Sociais da Rede do Bem</h1>
+          <p class="lead">Nossos projetos unem pessoas, comunidades e recursos para transformar realidades.  
+          Seja um voluntário, faça uma doação ou compartilhe essa corrente do bem.</p>
+        </div>
+      </section>
+
+      <!-- Projetos ativos -->
+      <section style="margin-top:20px">
+        <h2>Nossos Projetos Ativos</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>🌾 Alimentar Esperança</h3>
+            <p class="muted">Distribuímos semanalmente cestas básicas em comunidades em situação de vulnerabilidade.</p>
+            <ul class="small">
+              <li>Voluntários: 85</li>
+              <li>Meta: 1.000 cestas por mês</li>
+            </ul>
+            <div style="margin-top:8px;">
+              <a href="#" class="btn">Seja voluntário</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>📚 Escola Viva</h3>
+            <p class="muted">Reforço escolar e apoio psicológico para crianças e adolescentes.</p>
+            <ul class="small">
+              <li>Voluntários: 54</li>
+              <li>Meta: 500 alunos atendidos</li>
+            </ul>
+            <div style="margin-top:8px;">
+              <a href="#" class="btn">Participar</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>💼 Trabalho & Futuro</h3>
+            <p class="muted">Cursos de capacitação e orientação profissional para jovens e adultos.</p>
+            <ul class="small">
+              <li>Voluntários: 42</li>
+              <li>Meta: 250 pessoas capacitadas</li>
+            </ul>
+            <div style="margin-top:8px;">
+              <a href="#" class="btn">Apoiar</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>❤️ Saúde em Rede</h3>
+            <p class="muted">Campanhas de vacinação, prevenção e bem-estar em parceria com postos locais.</p>
+            <ul class="small">
+              <li>Voluntários: 63</li>
+              <li>Meta: 15 ações por mês</li>
+            </ul>
+            <div style="margin-top:8px;">
+              <a href="#" class="btn">Colaborar</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Histórico do voluntário -->
+      <section id="impacto" style="margin-top:30px">
+        <div class="card fade-up">
+          <h2>Meu Impacto na Rede do Bem 💚</h2>
+          <p class="muted">Acompanhe aqui seu histórico de voluntariado e doações.</p>
+
+          <div class="impact-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px;margin-top:15px;">
+            <div class="impact-card" style="background:#e0f2fe;padding:20px;border-radius:10px;text-align:center;">
+              <h3 id="horasVol">0h</h3>
+              <p class="small">Horas voluntárias</p>
+            </div>
+            <div class="impact-card" style="background:#fef3c7;padding:20px;border-radius:10px;text-align:center;">
+              <h3 id="doacaoReais">R$0</h3>
+              <p class="small">Doações em Reais</p>
+            </div>
+            <div class="impact-card" style="background:#dcfce7;padding:20px;border-radius:10px;text-align:center;">
+              <h3 id="doacaoKg">0kg</h3>
+              <p class="small">Doações de alimentos</p>
+            </div>
+            <div class="impact-card" style="background:#ede9fe;padding:20px;border-radius:10px;text-align:center;">
+              <h3 id="nivelEngajamento">Iniciante</h3>
+              <p class="small">Nível de engajamento</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Como doar -->
+      <section style="margin-top:30px;">
+        <div class="card">
+          <h2>Como Doar</h2>
+          <p class="muted">
+            Sua contribuição faz toda a diferença!  
+            Com sua doação, garantimos alimentos, materiais escolares, capacitação e atendimento básico de saúde para quem mais precisa.
+          </p>
+
+          <div style="align-items: center;justify-content: center;display:flex;flex-wrap:wrap;gap:10px;margin-top:10px;">
+           <aside class="hero-card fade-up" aria-labelledby="doar">
+          <h3 id="doar">Faça uma doação</h3>
+          <p class="muted">Sua contribuição garante cestas básicas, material escolar e programas de capacitação.</p>
+
+          <form id="donationForm" onsubmit="return handleDonate(event)" novalidate>
+            <label class="small">Valor</label>
+            <select id="donationAmount" aria-label="Valor da doação">
+              <option value="50">R$50 — Caixa de alimentos</option>
+              <option value="100">R$100 — Material escolar</option>
+              <option value="200">R$200 — Capacitação</option>
+              <option value="custom">Outro valor</option>
+            </select>
+            <div id="customAmountWrap" style="display:none">
+              <label class="small">Valor personalizado (R$)</label>
+              <input type="number" id="customAmount" min="1" placeholder="Digite um valor" />
+            </div>
+            <label class="small">Nome</label>
+            <input type="text" id="donorName" placeholder="Seu nome" required />
+            <button type="submit" class="btn">Contribuir</button>
+            <div id="donationResult" class="small" role="status" aria-live="polite"></div>
+          </form>
+        </aside>
+          </div>
+        </div>
+      </section>
+    <footer>
+      <div>© <span id="year"></span> Rede do Bem — Todos os direitos reservados</div>
+    </footer>
+  </div>
+</body>
+</html>

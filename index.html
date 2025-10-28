@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="eng">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="assets/js/javascript.js"></script>
+  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+  <title>Rede do Bem — ONG</title>
+  <meta name="description" content="Rede do Bem — conectando doadores, voluntários e projetos sociais para transformar vidas." />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="navbar">
+            <a class="brand" href="#" aria-label="Rede do Bem - Home">
+            <div class="logo" aria-hidden="true">RdB</div>
+            <div>
+            <div style="font-weight:800">Rede do Bem</div>
+         <div style="font-size:12px;color:var(--muted)">Conectando corações e ações</div>
+        </div>
+      </a>
+
+      <ul class="links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a class="btn" href="#doar">Doar</a></li>
+        <li><a href="engajamento_de_voluntario.html">Voluntaria-se</a></li>
+      </ul>
+      <div class="profile-icon" onclick="location.href='perfil.html'" id="profileIcon">RdB</div>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <div class="dropdown_menu ">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="#doar">Doar</a></li>
+        <li><a href="engajamento_de_voluntario.html">Voluntaria-se</a></li>
+        <li><a href="perfil.html">Meu perifl</a></li>
+      </div>
+        </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-card fade-up">
+          <h1>Rede do Bem — Junte-se a nós para transformar vidas</h1>
+          <p class="lead">Somos uma organização sem fins lucrativos que conecta doadores, voluntários e projetos sociais com foco em alimentação, educação e inclusão. Pequenas ações — grandes mudanças.</p>
+
+          <div class="kpis" role="list" aria-label="Nossos números">
+            <div class="kpi" role="listitem"><span class="small">Beneficiados</span><b>12.456</b></div>
+            <div class="kpi" role="listitem"><span class="small">Projetos ativos</span><b>38</b></div>
+            <div class="kpi" role="listitem"><span class="small">Voluntários</span><b>1.120</b></div>
+          </div>
+
+          <div style="margin-top:18px; display:flex; gap:10px;">
+            <a class="btn" href="#projetos">Conheça projetos</a>
+            <a style="background:transparent; border:0; color:var(--muted); font-weight:700; text-decoration:underline" href="#voluntario">Quero ser voluntário</a>
+          </div>
+        </div>
+
+         <aside class="hero-card fade-up" aria-labelledby="doar">
+          <h3 id="doar">Faça uma doação</h3>
+          <p class="muted">Sua contribuição garante cestas básicas, material escolar e programas de capacitação. Clique em conehça mais, Para saber mais em como funciona nossas doações</p>
+
+          <form id="donationForm"  novalidate>
+            <a href="projetos.html"  class="btn">Conheça mais</a>
+          </form>
+        </aside>
+
+      </section>
+
+      <section id="sobre" style="margin-top:8px">
+        <div class="card">
+          <h2>Sobre a Rede do Bem</h2>
+          <p class="muted">Fundada em 2024, a Rede do Bem surgiu para facilitar a conexão entre quem quer ajudar e quem precisa. Trabalhamos com transparência, responsabilidade e foco em impacto sustentável.</p>
+        </div>
+      </section>
+
+      <section id="projetos" style="margin-top:16px">
+        <h2 style="margin-bottom:10px">Nossos projetos</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Alimentar Esperança</h3>
+            <p class="muted">Distribuição semanal de cestas básicas em comunidades vulneráveis.</p>
+            <p class="small">Meta: 1.000 cestas / mês</p>
+          </article>
+
+          <article class="card">
+            <h3>Escola Viva</h3>
+            <p class="muted">Apoio escolar e reforço para crianças do ensino fundamental.</p>
+            <p class="small">Meta: 500 alunos atendidos</p>
+          </article>
+
+          <article class="card">
+            <h3>Trabalho & Futuro</h3>
+            <p class="muted">Cursos de capacitação profissional e vagas de estágio.</p>
+            <p class="small">Meta: 250 pessoas capacitadas</p>
+          </article>
+
+          <article class="card">
+            <h3>Saúde em Rede</h3>
+            <p class="muted">Campanhas de vacinação, prevenção e orientação básica de saúde.</p>
+            <p class="small">Parcerias com postos locais</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="voluntario" style="margin-top:18px">
+        <h2>Voluntarie-se</h2>
+        <div class="cta-row">
+          <div class="cta donate card">
+            <div>
+              <h3 style="margin:0">Ofereça seu tempo</h3>
+              <p class="small">Atue em distribuição, coordenação de cursos ou apoio administrativo.</p>
+            </div>
+            <div>
+              <a class="btn" href="cadastro.html">Entrar</a>
+            </div>
+          </div>
+
+          <div class="cta volunteer card">
+            <div>
+              <h3 style="margin:0">Fale Conosco</h3>
+              <p class="small">entre em contato conosco para saber mais sobre o projeto</p>
+            </div>
+            <div>
+              <a class="btn" href="contato.html">Fale Conosco</a>
+            </div>
+          </div>
+          <div class="cta volunteer card">
+            <div>
+              <h3 style="margin:0">Inscrição e Seleção</h3>
+              <p class="small">Participe das oportunidades de voluntariado, acompanhe seu histórico de ações e conquiste certificados digitais por sua dedicação.</p>
+            </div>
+            <div>
+              <a class="btn" href="engajamento_de_voluntario.html">Entrar</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>© <span id="year"></span> Rede do Bem — Todos os direitos reservados</div>
+    </footer>
+  </div>
+</body>
+</html>

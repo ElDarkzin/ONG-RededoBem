@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="assets/css/login.css">
+  <script src="assets/js/login.js"></script>
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+  <title>Rede do Bem — Login</title>
+</head>
+<body>
+  <div class="card" id="loginCard">
+    <h1>Login - Rede do Bem</h1>
+    <form id="loginForm" onsubmit="return handleLogin(event)">
+      <input type="email" id="loginEmail" placeholder="Email" required>
+      <input type="password" id="loginSenha" placeholder="Senha" required>
+      <button type="submit">Entrar</button>
+    </form>
+    <button class="switch-btn" onclick="location.href='cadastro.html'">Criar nova conta</button>
+    <div class="message" id="loginMsg"></div>
+     <a href="index.html" class="back">← Voltar ao início</a>
+  </div>
+</body>
+</html>

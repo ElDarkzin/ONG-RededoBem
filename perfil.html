@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="assets/css/perfil.css">
+  <script src="assets/js/perfil.js"></script>
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+  <title>Rede do Bem — Meu Perfil</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Meu Perfil</h1>
+    <form id="perfilForm" onsubmit="return salvarPerfil(event)">
+        <p>Nome Completo</p>
+      <input type="text" id="nome" placeholder="Nome completo" required>
+      <p>CPF</p>
+      <input type="text" oninput="cpf(this)" id="cpf" placeholder="CPF" required>
+      <p>Email</p>
+      <input type="email" id="email" placeholder="Email" required>
+      <P>Celular</P>
+      <input type="tel" id="celular" placeholder="Celular" maxlength="15" required>
+      <P>Doações KG</P>
+      <input type="number" disabled id="doacoesKg" placeholder="Doações (kg de alimentos)">
+      <p>Doações Reais</p>
+      <input type="number" disabled id="doacoesReais" placeholder="Doações (em R$)" min="0">
+      <p>CEP</p>
+      <input type="text" id="cep" placeholder="CEP (opcional)">
+      <p>Sua Função</p>
+      <select id="funcao" disabled>
+        <option value="">Administrador da ONG</option>
+        <option value="">Voluntario</option>
+        <option value="">Doador/Apoiador</option>
+        <option value="" selected>Visitante</option>
+      </select>
+      <p>Seu Genêro</p>
+      <select id="genero">
+        <option value="">Selecione o gênero (opcional)</option>
+        <option value="Masculino">Masculino</option>
+        <option value="Feminino">Feminino</option>
+        <option value="Outro">Outro</option>
+      </select>
+      <button type="submit">Salvar Alterações</button>
+      <button onclick="location.href='cadastro.html'">Cadastrar-se</button>
+    </form>
+    <div class="success" id="mensagemSucesso">✅ Alterações salvas com sucesso!</div>
+    <a href="index.html" class="back">← Voltar ao início</a>
+  </div>
+</body>
+</html>
